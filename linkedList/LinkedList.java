@@ -71,6 +71,10 @@ public class LinkedList {
 		return size;
 	}
 	
+	public boolean isEmpty() {
+		return size==0;
+	}
+	
 	public int getFirst() throws Exception {
 		if(this.size == 0) {
 			throw new Exception("LL is Empty.");
@@ -119,7 +123,6 @@ public class LinkedList {
 		
 		return last;
 	}
-	
 	
 	private Node getNodeAt(int n) throws Exception {
 		if(this.size == 0) {
@@ -205,6 +208,26 @@ public class LinkedList {
 		this.head = tail;
 		this.tail = temp;
 		this.tail.next = null;
+	}
+	
+	public void reverseRecursively() {
+		
+	}
+	
+	public int mid() throws Exception {
+		Node mN = getNodeAt((size-1)/2);
+		return mN.data;
+	}
+	
+	public boolean isPresent(int item) {
+		Node temp = head;
+		while(temp != null) {
+			if(temp.data == item) {
+				return true;
+			}
+			temp = temp.next;
+		}
+		return false;
 	}
 		
 
