@@ -22,7 +22,7 @@ public class LinkedListUse {
 //		list1.print();
 //		System.out.println(list1.size());
 		
-		LinkedList list2 = new LinkedList();
+//		LinkedList list2 = new LinkedList();
 //		list2.addFirst(10);
 //		System.out.println(list2.size());
 //		System.out.println(list2.removeLast());
@@ -34,9 +34,9 @@ public class LinkedListUse {
 //		list2.print();
 		
 		
-		System.out.println(list1.mid());
-		System.out.println(list1.isPresent(1));
-		System.out.println(list1.isPresent(0));
+//		System.out.println(list1.mid());
+//		System.out.println(list1.isPresent(1));
+//		System.out.println(list1.isPresent(0));
 	}
 
 }

@@ -210,16 +210,17 @@ public class LinkedList {
 		this.tail.next = null;
 	}
 	
-	public void reverseRecursively() {
-		
-	}
 	
 	public int mid() throws Exception {
 		Node mN = getNodeAt((size-1)/2);
 		return mN.data;
 	}
 	
-	public boolean isPresent(int item) {
+	public boolean isPresent(int item) throws Exception {
+		if(this.size == 0) {
+			throw new Exception("LL is Empty.");
+		}
+		
 		Node temp = head;
 		while(temp != null) {
 			if(temp.data == item) {
