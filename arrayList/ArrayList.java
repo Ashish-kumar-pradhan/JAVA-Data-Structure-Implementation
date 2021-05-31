@@ -10,7 +10,7 @@ public class ArrayList {
 		size = 0;
 	}
 	
-	public void increaseCapacity() {
+	private void increaseCapacity() {
 		int temp[] = data;
 		data = new int[2*temp.length];
 		for(int i = 0 ; i < temp.length ; i++) {
