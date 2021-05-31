@@ -27,15 +27,15 @@ public class QueueUsingLL {
 	
 	public int pop() throws Exception {
 		if(size == 0) {
-			throw new Exception("Stack is Empty");
+			throw new Exception("Queue is Empty");
 		}
 		size--;
 		return list.removeFirst();
 	}
 	
-	public int top() throws Exception {
+	public int front() throws Exception {
 		if(size == 0) {
-			throw new Exception("Stack is Empty");
+			throw new Exception("Queue is Empty");
 		}
 		return list.getFirst();
 	}
