@@ -1,12 +1,12 @@
 package doubleLinkedList;
 
-public class Node {
+public class Node<T> {
 
-	int data;
-	Node pre;
-	Node next;
+	T data;
+	Node<T> pre;
+	Node<T> next;
 	
-	public Node(int x) {
+	public Node(T x) {
 		data = x;
 		pre = null;
 		next = null;
